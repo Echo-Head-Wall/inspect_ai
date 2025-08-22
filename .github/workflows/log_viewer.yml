@@ -90,6 +90,9 @@ jobs:
       - name: Install dev deps
         run: uv sync --extra dev
 
+      - name: Install project (editable)
+        run: uv pip install -e .
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -99,7 +102,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Update schema and types
-        run: python src/inspect_ai/_view/schema.py
+        run: uv run python -m inspect_ai._view.schema
 
       - name: Ensure schema and types changes are checked in
         run: |
