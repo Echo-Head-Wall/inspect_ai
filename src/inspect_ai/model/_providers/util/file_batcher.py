@@ -1,5 +1,5 @@
 import functools
-import json
+from inspect_ai._util import json
 import tempfile
 from abc import abstractmethod
 from typing import IO, TypeVar

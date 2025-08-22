@@ -1,6 +1,6 @@
 import importlib.util
 import inspect
-import json
+from inspect_ai._util import json
 import site
 import sys
 from functools import lru_cache

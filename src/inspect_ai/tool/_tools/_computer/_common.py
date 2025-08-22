@@ -1,4 +1,4 @@
-import json
+from inspect_ai._util import json
 from textwrap import dedent
 from typing import Literal
 

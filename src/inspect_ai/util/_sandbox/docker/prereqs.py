@@ -1,4 +1,4 @@
-import json
+from inspect_ai._util import json
 import shlex
 from logging import getLogger
 from typing import Callable

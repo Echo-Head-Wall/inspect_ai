@@ -1,6 +1,6 @@
 import datetime
 import hashlib
-import json
+from inspect_ai._util import json
 import os
 import sqlite3
 import time

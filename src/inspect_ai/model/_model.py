@@ -1,7 +1,7 @@
 import abc
 import contextlib
 import functools
-import json
+from inspect_ai._util import json
 import logging
 import os
 import time

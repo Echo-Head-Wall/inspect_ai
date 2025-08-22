@@ -120,7 +120,7 @@ name = "inspect_ai"
 description = "Framework for large language model evaluations"
 authors = [{ name = "UK AI Security Institute" }]
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.13"
 license = { text = "MIT License" }
 dynamic = ["version", "dependencies"]
 classifiers = [

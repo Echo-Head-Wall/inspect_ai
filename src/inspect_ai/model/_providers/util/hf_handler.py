@@ -1,4 +1,4 @@
-import json
+from inspect_ai._util import json
 import re
 from logging import getLogger
 

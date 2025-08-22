@@ -1,6 +1,6 @@
 import functools
 import hashlib
-import json
+from inspect_ai._util import json
 import os
 from copy import copy
 from io import BytesIO

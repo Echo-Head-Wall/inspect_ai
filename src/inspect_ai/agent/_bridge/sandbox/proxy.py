@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import asyncio
-import json
+from inspect_ai._util import json
 import os
 import sys
 import time

@@ -1,6 +1,5 @@
 import datetime
 import gzip
-import json
 import logging
 import os
 import shutil
@@ -19,6 +18,7 @@ from shortuuid import uuid
 
 from .appdirs import inspect_data_dir
 from .constants import TRACE
+from inspect_ai._util.json import dumps
 
 
 def inspect_trace_dir() -> Path:
@@ -211,9 +211,7 @@ class TraceFormatter(logging.Formatter):
             ):
                 output[key] = value
 
-        return json.dumps(
-            output, default=str
-        )  # default=str handles non-serializable objects
+        return dumps(output)  # default=str handles non-serializable objects
 
     def formatTime(self, record: logging.LogRecord, datefmt: str | None = None) -> str:
         # ISO format with timezone

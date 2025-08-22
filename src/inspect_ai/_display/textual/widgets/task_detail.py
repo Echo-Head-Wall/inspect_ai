@@ -4,7 +4,7 @@ from dataclasses import dataclass
 import numpy as np
 from textual.app import ComposeResult
 from textual.containers import Center, Grid, Horizontal
-from textual.reactive import Reactive, reactive
+from textual.reactive import reactive
 from textual.widget import Widget
 from textual.widgets import Static
 
@@ -162,7 +162,7 @@ class TaskMetrics(Widget):
     }
     """
 
-    metrics: Reactive[list[TaskMetric]] = reactive([])
+    metrics = reactive([])
 
     def __init__(
         self,

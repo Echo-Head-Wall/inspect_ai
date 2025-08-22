@@ -1,5 +1,5 @@
 import asyncio
-import json
+from inspect_ai._util import json
 import logging
 import os
 import sys

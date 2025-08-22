@@ -1,3 +1,30 @@
+from __future__ import annotations
+
+# orjson wrapper providing json-compatible API pieces we use
+import orjson
+
+
+def dumps(obj: object, *, indent: int | None = None) -> str:
+    opts = 0
+    if indent is not None:
+        # orjson uses option to indent with 2 spaces minimum
+        opts |= orjson.OPT_INDENT_2
+    return orjson.dumps(obj, option=opts).decode()
+
+
+def dump(obj: object, fp) -> None:
+    fp.write(orjson.dumps(obj))
+
+
+def loads(s: str | bytes | bytearray):
+    return orjson.loads(s)
+
+
+def load(fp):
+    return orjson.loads(fp.read())
+
+
+JSONDecodeError = orjson.JSONDecodeError
 from typing import (
     Any,
     Literal,

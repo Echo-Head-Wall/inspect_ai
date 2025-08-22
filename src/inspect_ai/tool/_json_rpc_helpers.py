@@ -1,4 +1,4 @@
-import json
+from inspect_ai._util import json
 from itertools import count
 from typing import Literal, Protocol, Type, TypeAlias, TypeVar
 

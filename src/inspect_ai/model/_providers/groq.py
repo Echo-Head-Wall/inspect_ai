@@ -1,4 +1,4 @@
-import json
+from inspect_ai._util import json
 import os
 from copy import copy
 from typing import Any, Dict, Iterable, List, Optional

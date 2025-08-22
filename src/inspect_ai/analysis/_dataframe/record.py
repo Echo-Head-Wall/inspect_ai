@@ -1,4 +1,4 @@
-import json
+from inspect_ai._util import json
 from datetime import date, datetime, time, timezone
 from typing import Any, Callable, Literal, Sequence, Type, cast, overload
 

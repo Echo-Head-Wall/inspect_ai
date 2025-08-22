@@ -17,6 +17,7 @@ jsonschema>3.1.1
 mmh3>3.1.0
 nest_asyncio
 numpy
+orjson
 uvloop
 openai>=1.99.7
 platformdirs>=2.3.0
@@ -24,12 +25,12 @@ psutil
 pydantic>=2.11.4
 python-dotenv>=0.16.0
 pyyaml
-rich>=14.1.0
+rich>=14.0.0,<15.0.0
 s3fs>=2023
 semver>=3.0.0
 shortuuid
 sniffio
 tenacity
-textual>=5.8.0,<v3.0.0
+textual>=5.3.0,<6.0.0
 typing_extensions>=4.9.0
 zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability

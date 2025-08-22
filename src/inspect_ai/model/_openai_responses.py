@@ -1,4 +1,4 @@
-import json
+from inspect_ai._util import json
 from functools import reduce
 from typing import TYPE_CHECKING, Sequence, TypedDict, cast
 

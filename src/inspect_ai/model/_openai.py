@@ -1,6 +1,6 @@
 import base64
 import functools
-import json
+from inspect_ai._util import json
 import re
 import socket
 from copy import copy

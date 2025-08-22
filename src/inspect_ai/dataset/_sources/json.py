@@ -1,4 +1,4 @@
-import json
+from inspect_ai._util import json
 import os
 from io import TextIOWrapper
 from pathlib import Path

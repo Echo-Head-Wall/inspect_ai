@@ -1,4 +1,4 @@
-import json
+from inspect_ai._util import json
 from logging import getLogger
 from pathlib import PurePosixPath
 from textwrap import dedent
@@ -322,7 +322,7 @@ class SandboxService:
                     return result
 
         def _write_{self._name}_request(method: str, **params: Any) -> str:
-            from json import dump
+            from inspect_ai._util.json import dump
             from pathlib import Path
             from uuid import uuid4
 
@@ -335,7 +335,7 @@ class SandboxService:
             return request_id
 
         def _read_{self._name}_response(request_id: str) -> tuple[bool, Any]:
-            from json import JSONDecodeError, load
+            from inspect_ai._util.json import JSONDecodeError, load
             from pathlib import Path
 
             responses_dir = Path("{SERVICES_DIR}", "{self._name}", "{RESPONSES_DIR}")

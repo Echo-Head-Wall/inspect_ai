@@ -1,4 +1,4 @@
-import json
+from inspect_ai._util import json
 from typing import Any, TypedDict
 
 from typing_extensions import NotRequired, override

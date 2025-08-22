@@ -1,6 +1,6 @@
 import dataclasses
 import functools
-import json
+from inspect_ai._util import json
 import sys
 import time
 import uuid

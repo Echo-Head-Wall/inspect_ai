@@ -1,4 +1,4 @@
-from json import dumps
+from inspect_ai._util.json import dumps
 from typing import Literal
 
 import click

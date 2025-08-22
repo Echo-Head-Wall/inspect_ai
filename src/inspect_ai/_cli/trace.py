@@ -2,7 +2,7 @@ import os
 import shlex
 import time
 from datetime import datetime
-from json import dumps
+from inspect_ai._util.json import dumps
 from pathlib import Path
 from typing import Callable
 

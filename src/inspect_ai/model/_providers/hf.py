@@ -5,7 +5,7 @@ import concurrent.futures
 import copy
 import functools
 import gc
-import json
+from inspect_ai._util import json
 import os
 import time
 from concurrent.futures import Future

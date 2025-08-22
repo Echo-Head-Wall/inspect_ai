@@ -4,7 +4,7 @@ from typing import Iterator
 
 from rich.console import RenderableType
 from rich.text import Text
-from textual.reactive import Reactive
+from textual.reactive import reactive
 from textual.widget import Widget
 
 
@@ -71,10 +71,10 @@ class AppTitlebarTitle(Widget):
     }
     """
 
-    text: Reactive[str] = Reactive("")
+    text = reactive("")
     """The main title text."""
 
-    sub_text = Reactive("")
+    sub_text = reactive("")
     """The sub-title text."""
 
     def render(self) -> RenderableType:

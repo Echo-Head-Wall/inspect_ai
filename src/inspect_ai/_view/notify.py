@@ -1,4 +1,4 @@
-import json
+from inspect_ai._util import json
 import os
 from pathlib import Path
 from urllib.parse import urlparse

@@ -1,5 +1,5 @@
 import inspect
-import json
+from inspect_ai._util import json
 import types
 from copy import copy, deepcopy
 from dataclasses import is_dataclass
