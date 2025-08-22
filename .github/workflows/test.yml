@@ -10,5 +10,20 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo confirmation
-        run: echo "Minimal test workflow ran successfully!"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - uses: astral-sh/setup-uv@v4
+      - name: Install minimal deps
+        run: uv sync --extra dev
+      - name: Run a quick pytest smoke
+        run: |
+          uv run pytest -rA --color=yes \
+            tests/util \
+            tests/dataset \
+            tests/log \
+            tests/scorer \
+            tests/solver \
+            tests/analysis \
+            -k "not sandbox"
